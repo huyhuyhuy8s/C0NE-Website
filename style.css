@@ -1,0 +1,78 @@
+/* GOOGLE FONTS INSTALLS */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Barlow+Semi+Condensed:wght@500&family=Barlow:wght@600&family=Nunito:wght@200&family=Vollkorn&display=swap');
+
+/* JS CODES */
+@keyframes initTransition {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+/* HTML COMPONENTS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Vollkorn', serif;
+}
+/* BODY PARTS */
+body {
+    /* background-color: rgb(75, 75, 75); */
+    background-color: #FEFBF4;
+}
+
+/* BODY COMPONENTS */
+.container {
+    margin: 50px 50px;
+    display: grid;
+    grid-gap: 2em;
+    /* grid-template-columns: 100px minmax(100px, 3fr) minmax(100px, 1fr); */
+    grid-template-columns: 100px repeat(auto-fit, minmax(100px, 3fr)) 100px;
+    grid-template-rows: repeat(auto-fit, 100px);
+    grid-auto-flow: 100px;
+}
+.container > .structure {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 100px repeat(auto-fit, minmax(100px, 3fr)) 100px;
+    grid-template-rows: 100px;
+    grid-auto-flow: 100px;
+    /* background-color: rgb(123, 98, 98); */
+}
+/* SQUARE AND RELATIVE ELEMENTS */
+.square {
+    background-color: black;
+    transition: all 1s;
+}
+.box {
+    border: 0px solid rgb(75, 75, 75);
+    border-left: 0px solid black;
+    pointer-events: none;
+    margin-left: 50px;
+    transition: border 1s ease-in;
+}
+.text {
+    color: rgb(75, 75, 75);
+    user-select: none;
+    align-self: center;
+    transition: all 1s;
+}
+/* SQUARE TRIGGER EFFECTS */
+.square:hover {
+    rotate: 45deg;
+    /* background-color: palevioletred; */
+    background-color: white;
+}
+.square:hover~.text {
+    color: white;
+}
+.square:hover~.box {
+    border: 1px solid white;
+}
