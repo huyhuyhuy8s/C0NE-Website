@@ -428,7 +428,7 @@ nav {
     transition: transform 1s ease-in-out;
 }
 .frame.under {
-    background-color: #414141;
+    background-color: #ffffff;
     margin-top: 6.25rem;
 }
 .frame:hover {
@@ -438,7 +438,7 @@ nav {
 .frame.infor{
     height: 4.6875rem;
     width: 15.625rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(75, 75, 75);
     color: #000000;
     opacity: 0;
     transition: opacity 1s ease-out; 
