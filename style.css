@@ -438,7 +438,7 @@ nav {
 .frame.infor{
     height: 4.6875rem;
     width: 15.625rem;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(255, 255, 255);
     color: #000000;
     opacity: 0;
     transition: opacity 1s ease-out; 
