@@ -30,7 +30,7 @@ scrollTracker.animate(
 animatedImage.animate(
     {
         transform: [
-            "perspective(1000px) rotateX(45deg)",
+            "perspective(1000px) rotateX(90deg)",
             "perspective(1000px) rotateX(0)",
         ],
         opacity: ["0", "1"],
